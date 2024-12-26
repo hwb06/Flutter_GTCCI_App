@@ -130,7 +130,7 @@ class AboutScreen extends StatelessWidget {
                                 onPressed: () {
                                   // Handle button tap
                                   Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => ExecuitiveMemberScreen() ),
+                                    MaterialPageRoute(builder: (context) => ExecuitiveMembersScreen() ),
                                   );
                                 },
                                 child: Text(
