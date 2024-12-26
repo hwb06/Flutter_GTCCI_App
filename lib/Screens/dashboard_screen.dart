@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gtcci_app/Screens/help_screen.dart';
@@ -20,9 +19,8 @@ class DashboardScreen extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<DashboardScreen> {
-
-
   int _counter = 0;
+
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -162,8 +160,10 @@ class _MyHomePageState extends State<DashboardScreen> {
                         children: [
                           ElevatedButton(
                             onPressed: () {
-                              Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => AboutScreen() ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => AboutScreen()),
                               );
                             },
                             child: Text(
@@ -177,7 +177,7 @@ class _MyHomePageState extends State<DashboardScreen> {
                               foregroundColor: MaterialStateProperty.all<Color>(
                                   Colors.white),
                               padding:
-                              MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
                                 EdgeInsets.symmetric(
                                     vertical: 17, horizontal: 43),
                               ),
@@ -193,15 +193,13 @@ class _MyHomePageState extends State<DashboardScreen> {
                               elevation: MaterialStateProperty.all<double>(5),
                             ),
                           ),
-
-
-
-
                           SizedBox(width: 20),
                           ElevatedButton(
                             onPressed: () {
-                              Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => MediaScreen() ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MediaScreen()),
                               );
                             },
                             child: Text(
@@ -215,7 +213,7 @@ class _MyHomePageState extends State<DashboardScreen> {
                               foregroundColor: MaterialStateProperty.all<Color>(
                                   Colors.white),
                               padding:
-                              MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
                                 EdgeInsets.symmetric(
                                     vertical: 17, horizontal: 45),
                               ),
@@ -243,8 +241,10 @@ class _MyHomePageState extends State<DashboardScreen> {
                             ElevatedButton(
                               onPressed: () {
                                 // Handle button tap
-                                Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => EventScreen() ),
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => EventScreen()),
                                 );
                               },
                               child: Text(
@@ -254,11 +254,11 @@ class _MyHomePageState extends State<DashboardScreen> {
                               ),
                               style: ButtonStyle(
                                 backgroundColor:
-                                MaterialStateProperty.all<Color>(
-                                    Colors.green),
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.green),
                                 foregroundColor:
-                                MaterialStateProperty.all<Color>(
-                                    Colors.white),
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.white),
                                 padding: MaterialStateProperty.all<
                                     EdgeInsetsGeometry>(
                                   EdgeInsets.symmetric(
@@ -280,8 +280,10 @@ class _MyHomePageState extends State<DashboardScreen> {
                             ElevatedButton(
                               onPressed: () {
                                 // Handle button tap
-                                Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => HelpScreen() ),
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HelpScreen()),
                                 );
                               },
                               child: Text(
@@ -291,11 +293,11 @@ class _MyHomePageState extends State<DashboardScreen> {
                               ),
                               style: ButtonStyle(
                                 backgroundColor:
-                                MaterialStateProperty.all<Color>(
-                                    Colors.green),
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.green),
                                 foregroundColor:
-                                MaterialStateProperty.all<Color>(
-                                    Colors.white),
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.white),
                                 padding: MaterialStateProperty.all<
                                     EdgeInsetsGeometry>(
                                   EdgeInsets.symmetric(
@@ -324,8 +326,10 @@ class _MyHomePageState extends State<DashboardScreen> {
                           ElevatedButton(
                             onPressed: () {
                               // Handle button tap
-                              Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => MouScreen() ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MouScreen()),
                               );
                             },
                             child: Text(
@@ -339,7 +343,7 @@ class _MyHomePageState extends State<DashboardScreen> {
                               foregroundColor: MaterialStateProperty.all<Color>(
                                   Colors.white),
                               padding:
-                              MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
                                 EdgeInsets.symmetric(
                                     vertical: 17, horizontal: 55),
                               ),
@@ -359,11 +363,11 @@ class _MyHomePageState extends State<DashboardScreen> {
                           ElevatedButton(
                             onPressed: () {
                               // Handle button tap
-                              Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => SocialScreen() ),
-
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SocialScreen()),
                               );
-
                             },
                             child: Text(
                               'SOCIAL',
@@ -376,7 +380,7 @@ class _MyHomePageState extends State<DashboardScreen> {
                               foregroundColor: MaterialStateProperty.all<Color>(
                                   Colors.white),
                               padding:
-                              MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
                                 EdgeInsets.symmetric(
                                     vertical: 17, horizontal: 40),
                               ),
@@ -401,8 +405,10 @@ class _MyHomePageState extends State<DashboardScreen> {
                       child: ElevatedButton(
                         onPressed: () {
                           // Handle button tap
-                          Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => MISMembershipScreen() ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MISMembershipScreen()),
                           );
                         },
                         child: Text(
@@ -412,15 +418,15 @@ class _MyHomePageState extends State<DashboardScreen> {
                         ),
                         style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.green),
+                              MaterialStateProperty.all<Color>(Colors.green),
                           foregroundColor:
-                          MaterialStateProperty.all<Color>(Colors.white),
+                              MaterialStateProperty.all<Color>(Colors.white),
                           padding:
-                          MaterialStateProperty.all<EdgeInsetsGeometry>(
+                              MaterialStateProperty.all<EdgeInsetsGeometry>(
                             EdgeInsets.symmetric(vertical: 25, horizontal: 30),
                           ),
                           shape:
-                          MaterialStateProperty.all<RoundedRectangleBorder>(
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10.0),
                             ),
