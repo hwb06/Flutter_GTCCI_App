@@ -3,14 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SocialScreen extends StatelessWidget {
-
-
-
-
   @override
   Widget build(BuildContext context) {
-
-
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 60.2,
@@ -29,9 +23,6 @@ class SocialScreen extends StatelessWidget {
         ),
         titleSpacing: 00.0,
       ),
-
-
-
       body: Padding(
         padding: const EdgeInsets.all(17.0),
         child: Column(
@@ -75,8 +66,6 @@ class SocialScreen extends StatelessWidget {
                 ],
               ),
             ),
-
-
             Row(
               children: [
                 Expanded(
@@ -85,7 +74,6 @@ class SocialScreen extends StatelessWidget {
                     child: GridView(
                         shrinkWrap: true,
                         children: [
-
                           //Whatsapp
                           Padding(
                             padding: const EdgeInsets.all(6.0),
@@ -103,20 +91,22 @@ class SocialScreen extends StatelessWidget {
                                             color: Colors.grey.withOpacity(0.5),
                                             spreadRadius: 5,
                                             blurRadius: 7,
-                                            offset: Offset(0, 3), // changes position of shadow
+                                            offset: Offset(0,
+                                                3), // changes position of shadow
                                           ),
                                         ],
                                       ),
-                                      child:GestureDetector(
+                                      child: GestureDetector(
                                         onTap: () {
                                           openWhatsAppChooser(
-                                            "+923008622963", // Replace with your recipient's phone number
+                                            "+923008622963",
+                                            // Replace with your recipient's phone number
                                             "Hello GTCCI! How Are You?", // Replace with your message
                                           );
                                         },
-
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                           child: Image.asset(
                                             'assets/images/w.jpg',
                                             fit: BoxFit.cover,
@@ -164,16 +154,19 @@ class SocialScreen extends StatelessWidget {
                                             color: Colors.grey.withOpacity(0.5),
                                             spreadRadius: 5,
                                             blurRadius: 7,
-                                            offset: Offset(0, 3), // changes position of shadow
+                                            offset: Offset(0,
+                                                3), // changes position of shadow
                                           ),
                                         ],
                                       ),
-                                      child:GestureDetector(
+                                      child: GestureDetector(
                                         onTap: () {
-                                          launch("https://www.facebook.com/gujratchamberofcommerce/");
+                                          launch(
+                                              "https://www.facebook.com/gujratchamberofcommerce/");
                                         },
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                           child: Image.asset(
                                             'assets/images/f.jpg',
                                             fit: BoxFit.cover,
@@ -221,17 +214,19 @@ class SocialScreen extends StatelessWidget {
                                             color: Colors.grey.withOpacity(0.5),
                                             spreadRadius: 5,
                                             blurRadius: 7,
-                                            offset: Offset(0, 3), // changes position of shadow
+                                            offset: Offset(0,
+                                                3), // changes position of shadow
                                           ),
                                         ],
                                       ),
-                                      child:GestureDetector(
+                                      child: GestureDetector(
                                         onTap: () {
-                                          launch('https://www.linkedin.com/company/gtcci/');
-
+                                          launch(
+                                              'https://www.linkedin.com/company/gtcci/');
                                         },
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                           child: Image.asset(
                                             'assets/images/l.jpg',
                                             fit: BoxFit.cover,
@@ -279,16 +274,19 @@ class SocialScreen extends StatelessWidget {
                                             color: Colors.grey.withOpacity(0.5),
                                             spreadRadius: 5,
                                             blurRadius: 7,
-                                            offset: Offset(0, 3), // changes position of shadow
+                                            offset: Offset(0,
+                                                3), // changes position of shadow
                                           ),
                                         ],
                                       ),
-                                      child:GestureDetector(
+                                      child: GestureDetector(
                                         onTap: () {
-                                          launch("https://twitter.com/gujrat_chamber");
+                                          launch(
+                                              "https://twitter.com/gujrat_chamber");
                                         },
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                           child: Image.asset(
                                             'assets/images/t.jpg',
                                             fit: BoxFit.cover,
@@ -336,17 +334,19 @@ class SocialScreen extends StatelessWidget {
                                             color: Colors.grey.withOpacity(0.5),
                                             spreadRadius: 5,
                                             blurRadius: 7,
-                                            offset: Offset(0, 3), // changes position of shadow
+                                            offset: Offset(0,
+                                                3), // changes position of shadow
                                           ),
                                         ],
                                       ),
-                                      child:GestureDetector(
+                                      child: GestureDetector(
                                         onTap: () {
-                                          launch('https://maps.app.goo.gl/r7s1EtNh6Eys7sRf8');
-
+                                          launch(
+                                              'https://maps.app.goo.gl/r7s1EtNh6Eys7sRf8');
                                         },
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius:
+                                              BorderRadius.circular(20),
                                           child: Image.asset(
                                             'assets/images/m.jpg',
                                             fit: BoxFit.cover,
@@ -377,13 +377,11 @@ class SocialScreen extends StatelessWidget {
                             ),
                           ),
                         ],
-
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           mainAxisSpacing: 1,
                           crossAxisSpacing: 10,
-                        )
-                    ),
+                        )),
                   ),
                 ),
               ],
@@ -395,10 +393,11 @@ class SocialScreen extends StatelessWidget {
   }
 }
 
-
 void openWhatsAppChooser(String phoneNumber, String message) async {
-  String whatsappUrl = "https://wa.me/$phoneNumber/?text=${Uri.encodeFull(message)}";
-  String whatsappBusinessUrl = "https://api.whatsapp.com/send?phone=$phoneNumber&text=${Uri.encodeFull(message)}";
+  String whatsappUrl =
+      "https://wa.me/$phoneNumber/?text=${Uri.encodeFull(message)}";
+  String whatsappBusinessUrl =
+      "https://api.whatsapp.com/send?phone=$phoneNumber&text=${Uri.encodeFull(message)}";
 
   try {
     await launch(whatsappUrl);
