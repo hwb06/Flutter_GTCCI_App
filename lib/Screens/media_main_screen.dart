@@ -231,7 +231,7 @@ class MediaScreen extends StatelessWidget {
                 ),
                 onTap: (){
                   Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HelpScreen()),
+                    MaterialPageRoute(builder: (context) => HelpSceen()),
                   );
                   changeSelected(4);
                 },

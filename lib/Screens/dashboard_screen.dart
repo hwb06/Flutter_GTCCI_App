@@ -283,7 +283,7 @@ class _MyHomePageState extends State<DashboardScreen> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => HelpScreen()),
+                                      builder: (context) => HelpSceen()),
                                 );
                               },
                               child: Text(
