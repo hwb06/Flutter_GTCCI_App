@@ -45,8 +45,6 @@ class EventScreen extends StatelessWidget {
       body: WebViewWidget(
         controller: controller,
       ),
-
-
       drawer: Container(
         width: 280,
         child: Drawer(
@@ -188,12 +186,10 @@ class EventScreen extends StatelessWidget {
               ),
               Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        colors: [
-                          Color(0xff2af598), Color(0xff009efd),
-                        ]
-                    )
-                ),
+                    gradient: LinearGradient(colors: [
+                  Color(0xff2af598),
+                  Color(0xff009efd),
+                ])),
                 child: ListTile(
                   selected: _selected == 3,
                   leading: Icon(
@@ -213,7 +209,7 @@ class EventScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => EventScreen() ),
+                      MaterialPageRoute(builder: (context) => EventScreen()),
                     );
                     changeSelected(3);
                   },
@@ -262,7 +258,7 @@ class EventScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MouScreen() ),
+                    MaterialPageRoute(builder: (context) => MouScreen()),
                   );
                   changeSelected(5);
                 },
@@ -286,7 +282,7 @@ class EventScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SocialScreen() ),
+                    MaterialPageRoute(builder: (context) => SocialScreen()),
                   );
                   changeSelected(6);
                 },
@@ -310,7 +306,8 @@ class EventScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MISMembershipScreen() ),
+                    MaterialPageRoute(
+                        builder: (context) => MISMembershipScreen()),
                   );
                   changeSelected(7);
                 },

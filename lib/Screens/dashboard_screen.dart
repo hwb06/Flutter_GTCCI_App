@@ -30,12 +30,6 @@ class _MyHomePageState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //
-      //   backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      //
-      //   title: Text("GTCCI"),
-      // ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -51,19 +45,16 @@ class _MyHomePageState extends State<DashboardScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               SizedBox(height: 30),
-              // Optional, agar aap spacing dena chahte hain
               Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image.asset(
                       'assets/images/gtcci2.png',
-                      // Apne image ke path ko yahan par de
-                      width: 80, // Apne image ka width yahan par set karein
-                      height: 80, // Apne image ka height yahan par set karein
+                      width: 80,
+                      height: 80,
                     ),
                     SizedBox(height: 10),
-                    // Optional, agar aap spacing dena chahte hain
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Container(
@@ -438,12 +429,6 @@ class _MyHomePageState extends State<DashboardScreen> {
                         ),
                       ),
                     ),
-                    // Optional spacing
-// Container containing images and their descriptions
-
-// Repeat the above structure for other rows of buttons and content
-
-                    // Optional spacing between the content and buttons
                   ],
                 ),
               ),
@@ -452,6 +437,5 @@ class _MyHomePageState extends State<DashboardScreen> {
         ),
       ),
     );
-    // This trailing comma makes auto-formatting nicer for build methods.
   }
 }

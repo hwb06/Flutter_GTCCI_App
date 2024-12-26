@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gtcci_app/Screens/about_screen.dart';
@@ -11,13 +10,12 @@ import 'package:flutter_gtcci_app/Screens/social_screen.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class HelpSceen extends StatelessWidget {
-
   int _selected = 0;
+
   void changeSelected(int index) {
-    setState (() {
+    setState(() {
       _selected = index;
     });
-
   }
 
   final controller = WebViewController()
@@ -26,9 +24,7 @@ class HelpSceen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-
       appBar: AppBar(
         toolbarHeight: 60.2,
         toolbarOpacity: 0.8,
@@ -40,15 +36,15 @@ class HelpSceen extends StatelessWidget {
         ),
         elevation: 0.00,
         backgroundColor: Color(0xff2af598),
-        title: Text("Help", style: TextStyle(fontWeight: FontWeight.bold ),
+        title: Text(
+          "Help",
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         titleSpacing: 00.0,
       ),
-
-      body:  WebViewWidget(
+      body: WebViewWidget(
         controller: controller,
       ),
-
       drawer: Container(
         width: 280,
         child: Drawer(
@@ -207,19 +203,17 @@ class HelpSceen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => EventScreen() ),
+                    MaterialPageRoute(builder: (context) => EventScreen()),
                   );
                   changeSelected(3);
                 },
               ),
               Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        colors: [
-                          Color(0xff2af598), Color(0xff009efd),
-                        ]
-                    )
-                ),
+                    gradient: LinearGradient(colors: [
+                  Color(0xff2af598),
+                  Color(0xff009efd),
+                ])),
                 child: ListTile(
                   selected: _selected == 4,
                   leading: Icon(
@@ -264,7 +258,7 @@ class HelpSceen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MouScreen() ),
+                    MaterialPageRoute(builder: (context) => MouScreen()),
                   );
                   changeSelected(5);
                 },
@@ -288,7 +282,7 @@ class HelpSceen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SocialScreen() ),
+                    MaterialPageRoute(builder: (context) => SocialScreen()),
                   );
                   changeSelected(6);
                 },
@@ -312,7 +306,8 @@ class HelpSceen extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MISMembershipScreen() ),
+                    MaterialPageRoute(
+                        builder: (context) => MISMembershipScreen()),
                   );
                   changeSelected(7);
                 },
@@ -321,14 +316,8 @@ class HelpSceen extends StatelessWidget {
           ),
         ),
       ),
-
-
-
-
     );
-
   }
 
   void setState(Null Function() param0) {}
-
 }

@@ -9,8 +9,7 @@ import 'package:flutter_gtcci_app/Screens/mis_membership_screen.dart';
 import 'package:flutter_gtcci_app/Screens/social_screen.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class MouScreen extends StatelessWidget{
-
+class MouScreen extends StatelessWidget {
   int _selected = 0;
 
   void changeSelected(int index) {
@@ -24,12 +23,9 @@ class MouScreen extends StatelessWidget{
     ..loadRequest(Uri.parse("https://gtcci.org.pk/landingpage/mous-2/"));
 
   @override
-
   Widget build(BuildContext context) {
-
     return Scaffold(
-
-      appBar:  AppBar(
+      appBar: AppBar(
         toolbarHeight: 60.2,
         toolbarOpacity: 0.8,
         shape: RoundedRectangleBorder(
@@ -40,15 +36,15 @@ class MouScreen extends StatelessWidget{
         ),
         elevation: 0.00,
         backgroundColor: Color(0xff2af598),
-        title: Text("MOU", style: TextStyle(fontWeight: FontWeight.bold ),
+        title: Text(
+          "MOU",
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         titleSpacing: 00.0,
       ),
-
-      body:  WebViewWidget(
+      body: WebViewWidget(
         controller: controller,
       ),
-
       drawer: Container(
         width: 280,
         child: Drawer(
@@ -207,7 +203,7 @@ class MouScreen extends StatelessWidget{
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => EventScreen() ),
+                    MaterialPageRoute(builder: (context) => EventScreen()),
                   );
                   changeSelected(3);
                 },
@@ -238,12 +234,10 @@ class MouScreen extends StatelessWidget{
               ),
               Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        colors: [
-                          Color(0xff2af598), Color(0xff009efd),
-                        ]
-                    )
-                ),
+                    gradient: LinearGradient(colors: [
+                  Color(0xff2af598),
+                  Color(0xff009efd),
+                ])),
                 child: ListTile(
                   selected: _selected == 5,
                   leading: Icon(
@@ -263,7 +257,7 @@ class MouScreen extends StatelessWidget{
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => MouScreen() ),
+                      MaterialPageRoute(builder: (context) => MouScreen()),
                     );
                     changeSelected(5);
                   },
@@ -288,7 +282,7 @@ class MouScreen extends StatelessWidget{
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SocialScreen() ),
+                    MaterialPageRoute(builder: (context) => SocialScreen()),
                   );
                   changeSelected(6);
                 },
@@ -312,7 +306,8 @@ class MouScreen extends StatelessWidget{
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MISMembershipScreen() ),
+                    MaterialPageRoute(
+                        builder: (context) => MISMembershipScreen()),
                   );
                   changeSelected(7);
                 },
@@ -321,11 +316,8 @@ class MouScreen extends StatelessWidget{
           ),
         ),
       ),
-
     );
-
   }
 
   void setState(Null Function() param0) {}
-
 }

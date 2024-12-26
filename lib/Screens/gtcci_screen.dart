@@ -3,12 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class GtcciScreen extends StatelessWidget {
-
   final controller = WebViewController()
     ..setJavaScriptMode(JavaScriptMode.unrestricted)
     ..loadRequest(Uri.parse("https://gtcci.org.pk/landingpage/gtcci-app-2/"));
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +20,15 @@ class GtcciScreen extends StatelessWidget {
           ),
         ),
         elevation: 0.00,
-
         backgroundColor: Color(0xff2af598),
-        title: Text("GTCCI", style: TextStyle(fontWeight: FontWeight.bold ),
+        title: Text(
+          "GTCCI",
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         titleSpacing: 00.0,
       ),
-
-      body: WebViewWidget (
+      body: WebViewWidget(
         controller: controller,
-
       ),
     );
   }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gtcci_app/Screens/execuitive_members_screen.dart';
@@ -6,17 +5,15 @@ import 'package:flutter_gtcci_app/Screens/gtcci_screen.dart';
 import 'package:flutter_gtcci_app/Screens/office_bearer_screen.dart';
 
 class AboutScreen extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xff2af598), Color(0xff009efd),
+              Color(0xff2af598),
+              Color(0xff009efd),
             ],
           ),
         ),
@@ -27,8 +24,9 @@ class AboutScreen extends StatelessWidget {
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget> [
-                  Image.asset("assets/images/gtcci2.png",
+                children: <Widget>[
+                  Image.asset(
+                    "assets/images/gtcci2.png",
                     width: 100,
                     height: 100,
                   ),
@@ -63,7 +61,8 @@ class AboutScreen extends StatelessWidget {
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xff2af598), Color(0xff009efd),
+                                    Color(0xff2af598),
+                                    Color(0xff009efd),
                                   ],
                                 ),
                                 borderRadius: BorderRadius.circular(12),
@@ -78,22 +77,27 @@ class AboutScreen extends StatelessWidget {
                               child: ElevatedButton(
                                 onPressed: () {
                                   // Handle button tap
-                                  Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => GtcciScreen() ),
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => GtcciScreen()),
                                   );
                                 },
                                 child: Text(
                                   'GTCCI',
                                   style: TextStyle(
-                                      fontSize: 17, fontWeight: FontWeight.bold),
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.green),
-                                  foregroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.white),
-                                  padding:
-                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.green),
+                                  foregroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.white),
+                                  padding: MaterialStateProperty.all<
+                                      EdgeInsetsGeometry>(
                                     EdgeInsets.symmetric(
                                         vertical: 30, horizontal: 75),
                                   ),
@@ -103,48 +107,58 @@ class AboutScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                   ),
-                                  textStyle: MaterialStateProperty.all<TextStyle>(
+                                  textStyle:
+                                      MaterialStateProperty.all<TextStyle>(
                                     TextStyle(fontSize: 16),
                                   ),
-                                  elevation: MaterialStateProperty.all<double>(5),
+                                  elevation:
+                                      MaterialStateProperty.all<double>(5),
                                 ),
                               ),
                             ),
-
                             SizedBox(height: 20),
                             Container(
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xff2af598), Color(0xff009efd),
+                                    Color(0xff2af598),
+                                    Color(0xff009efd),
                                   ],
                                 ),
                                 borderRadius: BorderRadius.circular(12),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Colors.white, spreadRadius: 3, blurRadius: 4,
+                                    color: Colors.white,
+                                    spreadRadius: 3,
+                                    blurRadius: 4,
                                   ),
                                 ],
                               ),
                               child: ElevatedButton(
                                 onPressed: () {
                                   // Handle button tap
-                                  Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => ExecuitiveMembersScreen() ),
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            ExecuitiveMembersScreen()),
                                   );
                                 },
                                 child: Text(
                                   'EXECUITIVE MEMBERS',
                                   style: TextStyle(
-                                      fontSize: 15, fontWeight: FontWeight.bold),
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.green),
-                                  foregroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.white),
-                                  padding:
-                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.green),
+                                  foregroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.white),
+                                  padding: MaterialStateProperty.all<
+                                      EdgeInsetsGeometry>(
                                     EdgeInsets.symmetric(
                                         vertical: 32, horizontal: 20),
                                   ),
@@ -154,48 +168,58 @@ class AboutScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                   ),
-                                  textStyle: MaterialStateProperty.all<TextStyle>(
+                                  textStyle:
+                                      MaterialStateProperty.all<TextStyle>(
                                     TextStyle(fontSize: 16),
                                   ),
-                                  elevation: MaterialStateProperty.all<double>(5),
+                                  elevation:
+                                      MaterialStateProperty.all<double>(5),
                                 ),
                               ),
                             ),
-
                             SizedBox(height: 20),
                             Container(
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xff2af598), Color(0xff009efd),
+                                    Color(0xff2af598),
+                                    Color(0xff009efd),
                                   ],
                                 ),
                                 borderRadius: BorderRadius.circular(12),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Colors.white, spreadRadius: 3, blurRadius: 4,
+                                    color: Colors.white,
+                                    spreadRadius: 3,
+                                    blurRadius: 4,
                                   ),
                                 ],
                               ),
                               child: ElevatedButton(
                                 onPressed: () {
                                   // Handle button tap
-                                  Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => OfficeBearerScreen() ),
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            OfficeBearerScreen()),
                                   );
                                 },
                                 child: Text(
                                   'OFFICE BEARERS',
                                   style: TextStyle(
-                                      fontSize: 15, fontWeight: FontWeight.bold),
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.green),
-                                  foregroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.white),
-                                  padding:
-                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.green),
+                                  foregroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.white),
+                                  padding: MaterialStateProperty.all<
+                                      EdgeInsetsGeometry>(
                                     EdgeInsets.symmetric(
                                         vertical: 30, horizontal: 40),
                                   ),
@@ -205,10 +229,12 @@ class AboutScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                   ),
-                                  textStyle: MaterialStateProperty.all<TextStyle>(
+                                  textStyle:
+                                      MaterialStateProperty.all<TextStyle>(
                                     TextStyle(fontSize: 16),
                                   ),
-                                  elevation: MaterialStateProperty.all<double>(5),
+                                  elevation:
+                                      MaterialStateProperty.all<double>(5),
                                 ),
                               ),
                             ),
@@ -217,18 +243,12 @@ class AboutScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-
-
                 ],
               ),
             )
-
           ],
         ),
       ),
-
-
     );
   }
-
 }

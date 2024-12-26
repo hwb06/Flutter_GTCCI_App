@@ -11,9 +11,9 @@ import 'package:flutter_gtcci_app/Screens/social_screen.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class MediaScreen extends StatelessWidget {
-
   int _selected = 0;
-  void changeSelected(int index){
+
+  void changeSelected(int index) {
     setState(() {
       _selected = index;
     });
@@ -22,7 +22,6 @@ class MediaScreen extends StatelessWidget {
   final controller = WebViewController()
     ..setJavaScriptMode(JavaScriptMode.unrestricted)
     ..loadRequest(Uri.parse("https://gtcci.org.pk/landingpage/media-1/"));
-
 
   @override
   Widget build(BuildContext context) {
@@ -53,13 +52,13 @@ class MediaScreen extends StatelessWidget {
           child: ListView(
             children: [
               Container(
-                height:  210,
+                height: 210,
                 child: DrawerHeader(
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/images/grad_green.jpg"),
-                        fit: BoxFit.cover,
-                      )),
+                    image: AssetImage("assets/images/grad_green.jpg"),
+                    fit: BoxFit.cover,
+                  )),
                   child: Center(
                     child: Container(
                       margin: EdgeInsets.only(top: 1),
@@ -85,8 +84,7 @@ class MediaScreen extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                                 height: 1,
-                                fontFamily: "FontMain"
-                            ),
+                                fontFamily: "FontMain"),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -116,7 +114,7 @@ class MediaScreen extends StatelessWidget {
                   leading: Icon(
                     Icons.home,
                     color: Colors.grey.shade600,
-                    size: 25  ,
+                    size: 25,
                   ),
                   title: Text(
                     "HOME",
@@ -124,12 +122,13 @@ class MediaScreen extends StatelessWidget {
                         fontSize: 14,
                         color: Colors.grey.shade600,
                         fontWeight: FontWeight.bold,
-                        fontFamily: "FontMain3"
-                    ),
+                        fontFamily: "FontMain3"),
                   ),
-                  onTap: (){
-                    Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => DashboardScreen(title: 'Home')),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DashboardScreen(title: 'Home')),
                     );
                     changeSelected(0);
                   },
@@ -140,7 +139,7 @@ class MediaScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.people_alt,
                   color: Colors.grey.shade600,
-                  size: 22  ,
+                  size: 22,
                 ),
                 title: Text(
                   "ABOUT",
@@ -148,11 +147,11 @@ class MediaScreen extends StatelessWidget {
                       fontSize: 14,
                       color: Colors.grey.shade600,
                       fontWeight: FontWeight.bold,
-                      fontFamily: "FontMain3"
-                  ),
+                      fontFamily: "FontMain3"),
                 ),
-                onTap: (){
-                  Navigator.push(context,
+                onTap: () {
+                  Navigator.push(
+                    context,
                     MaterialPageRoute(builder: (context) => AboutScreen()),
                   );
                   changeSelected(1);
@@ -160,18 +159,16 @@ class MediaScreen extends StatelessWidget {
               ),
               Container(
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        colors: [
-                          Color(0xff2af598), Color(0xff009efd),
-                        ]
-                    )
-                ),
+                    gradient: LinearGradient(colors: [
+                  Color(0xff2af598),
+                  Color(0xff009efd),
+                ])),
                 child: ListTile(
                   selected: _selected == 2,
                   leading: Icon(
                     Icons.perm_media,
                     color: Colors.grey,
-                    size: 22  ,
+                    size: 22,
                   ),
                   title: Text(
                     "MEDIA",
@@ -179,11 +176,11 @@ class MediaScreen extends StatelessWidget {
                         fontSize: 14,
                         color: Colors.grey,
                         fontWeight: FontWeight.bold,
-                        fontFamily: "FontMain3"
-                    ),
+                        fontFamily: "FontMain3"),
                   ),
-                  onTap: (){
-                    Navigator.push(context,
+                  onTap: () {
+                    Navigator.push(
+                      context,
                       MaterialPageRoute(builder: (context) => MediaScreen()),
                     );
                     changeSelected(2);
@@ -195,7 +192,7 @@ class MediaScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.event,
                   color: Colors.grey.shade600,
-                  size: 22  ,
+                  size: 22,
                 ),
                 title: Text(
                   "EVENTS",
@@ -203,11 +200,11 @@ class MediaScreen extends StatelessWidget {
                       fontSize: 14,
                       color: Colors.grey.shade600,
                       fontWeight: FontWeight.bold,
-                      fontFamily: "FontMain3"
-                  ),
+                      fontFamily: "FontMain3"),
                 ),
-                onTap: (){
-                  Navigator.push(context,
+                onTap: () {
+                  Navigator.push(
+                    context,
                     MaterialPageRoute(builder: (context) => EventScreen()),
                   );
                   changeSelected(3);
@@ -218,7 +215,7 @@ class MediaScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.help,
                   color: Colors.grey.shade600,
-                  size: 22  ,
+                  size: 22,
                 ),
                 title: Text(
                   "HELP",
@@ -226,11 +223,11 @@ class MediaScreen extends StatelessWidget {
                       fontSize: 14,
                       color: Colors.grey.shade600,
                       fontWeight: FontWeight.bold,
-                      fontFamily: "FontMain3"
-                  ),
+                      fontFamily: "FontMain3"),
                 ),
-                onTap: (){
-                  Navigator.push(context,
+                onTap: () {
+                  Navigator.push(
+                    context,
                     MaterialPageRoute(builder: (context) => HelpSceen()),
                   );
                   changeSelected(4);
@@ -241,7 +238,7 @@ class MediaScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.note_alt,
                   color: Colors.grey.shade600,
-                  size: 22  ,
+                  size: 22,
                 ),
                 title: Text(
                   "MOU",
@@ -249,13 +246,12 @@ class MediaScreen extends StatelessWidget {
                       fontSize: 14,
                       color: Colors.grey.shade600,
                       fontWeight: FontWeight.bold,
-                      fontFamily: "FontMain3"
-                  ),
+                      fontFamily: "FontMain3"),
                 ),
-                onTap: (){
-                  Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MouScreen()
-                    ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MouScreen()),
                   );
                   changeSelected(5);
                 },
@@ -265,7 +261,7 @@ class MediaScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.attractions,
                   color: Colors.grey.shade600,
-                  size: 22  ,
+                  size: 22,
                 ),
                 title: Text(
                   "SOCIAL",
@@ -273,11 +269,11 @@ class MediaScreen extends StatelessWidget {
                       fontSize: 14,
                       color: Colors.grey.shade600,
                       fontWeight: FontWeight.bold,
-                      fontFamily: "FontMain3"
-                  ),
+                      fontFamily: "FontMain3"),
                 ),
-                onTap: (){
-                  Navigator.push(context,
+                onTap: () {
+                  Navigator.push(
+                    context,
                     MaterialPageRoute(builder: (context) => SocialScreen()),
                   );
                   changeSelected(6);
@@ -288,7 +284,7 @@ class MediaScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.person_add,
                   color: Colors.grey.shade600,
-                  size: 22  ,
+                  size: 22,
                 ),
                 title: Text(
                   "MIS(Only For Members)",
@@ -296,12 +292,13 @@ class MediaScreen extends StatelessWidget {
                       fontSize: 14,
                       color: Colors.grey.shade600,
                       fontWeight: FontWeight.bold,
-                      fontFamily: "FontMain3"
-                  ),
+                      fontFamily: "FontMain3"),
                 ),
-                onTap: (){
-                  Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MISMembershipScreen()),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => MISMembershipScreen()),
                   );
                   changeSelected(7);
                 },

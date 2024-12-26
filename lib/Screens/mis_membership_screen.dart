@@ -10,11 +10,11 @@ class MISMembershipScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Color(0xff2af598),
-                Color(0xff009efd),
-              ],
-            )),
+          colors: [
+            Color(0xff2af598),
+            Color(0xff009efd),
+          ],
+        )),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -32,7 +32,7 @@ class MISMembershipScreen extends StatelessWidget {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       ""
-                          "Gujrat Chamber Of Commerce \n and Industry",
+                      "Gujrat Chamber Of Commerce \n and Industry",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 19,
@@ -43,7 +43,6 @@ class MISMembershipScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-
                   Container(
                     margin: EdgeInsets.only(top: 51),
                     child: Padding(
@@ -57,7 +56,8 @@ class MISMembershipScreen extends StatelessWidget {
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xff2af598), Color(0xff009efd),
+                                    Color(0xff2af598),
+                                    Color(0xff009efd),
                                   ],
                                 ),
                                 borderRadius: BorderRadius.circular(12),
@@ -72,23 +72,27 @@ class MISMembershipScreen extends StatelessWidget {
                               child: ElevatedButton(
                                 onPressed: () {
                                   // Handle button tap
-                                  Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => MISLogin()),
-
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => MISLogin()),
                                   );
                                 },
                                 child: Text(
                                   'MIS Login',
                                   style: TextStyle(
-                                      fontSize: 17, fontWeight: FontWeight.bold),
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.green),
-                                  foregroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.white),
-                                  padding:
-                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.green),
+                                  foregroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.white),
+                                  padding: MaterialStateProperty.all<
+                                      EdgeInsetsGeometry>(
                                     EdgeInsets.symmetric(
                                         vertical: 25, horizontal: 60),
                                   ),
@@ -98,48 +102,58 @@ class MISMembershipScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                   ),
-                                  textStyle: MaterialStateProperty.all<TextStyle>(
+                                  textStyle:
+                                      MaterialStateProperty.all<TextStyle>(
                                     TextStyle(fontSize: 16),
                                   ),
-                                  elevation: MaterialStateProperty.all<double>(5),
+                                  elevation:
+                                      MaterialStateProperty.all<double>(5),
                                 ),
                               ),
                             ),
-
                             SizedBox(height: 20),
                             Container(
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xff2af598), Color(0xff009efd),
+                                    Color(0xff2af598),
+                                    Color(0xff009efd),
                                   ],
                                 ),
                                 borderRadius: BorderRadius.circular(12),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Colors.white, spreadRadius: 3, blurRadius: 4,
+                                    color: Colors.white,
+                                    spreadRadius: 3,
+                                    blurRadius: 4,
                                   ),
                                 ],
                               ),
                               child: ElevatedButton(
                                 onPressed: () {
                                   // Handle button tap
-                                  Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => MisSubscriptionsScreen()),
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            MisSubscriptionsScreen()),
                                   );
                                 },
                                 child: Text(
                                   'MIS SUBSCRIPTION',
                                   style: TextStyle(
-                                      fontSize: 15, fontWeight: FontWeight.bold),
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.green),
-                                  foregroundColor: MaterialStateProperty.all<Color>(
-                                      Colors.white),
-                                  padding:
-                                  MaterialStateProperty.all<EdgeInsetsGeometry>(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.green),
+                                  foregroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          Colors.white),
+                                  padding: MaterialStateProperty.all<
+                                      EdgeInsetsGeometry>(
                                     EdgeInsets.symmetric(
                                         vertical: 28, horizontal: 30),
                                   ),
@@ -149,10 +163,12 @@ class MISMembershipScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                   ),
-                                  textStyle: MaterialStateProperty.all<TextStyle>(
+                                  textStyle:
+                                      MaterialStateProperty.all<TextStyle>(
                                     TextStyle(fontSize: 16),
                                   ),
-                                  elevation: MaterialStateProperty.all<double>(5),
+                                  elevation:
+                                      MaterialStateProperty.all<double>(5),
                                 ),
                               ),
                             ),
@@ -161,10 +177,6 @@ class MISMembershipScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-
-
-
-
                 ],
               ),
             )
