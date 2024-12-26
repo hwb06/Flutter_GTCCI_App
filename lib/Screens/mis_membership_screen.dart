@@ -125,7 +125,7 @@ class MISMembershipScreen extends StatelessWidget {
                                 onPressed: () {
                                   // Handle button tap
                                   Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) => MISSubscriptionScreen()),
+                                    MaterialPageRoute(builder: (context) => MisSubscriptionsScreen()),
                                   );
                                 },
                                 child: Text(

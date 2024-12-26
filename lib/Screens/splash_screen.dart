@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    Timer(Duration(seconds: 4), () {
+    Timer(Duration(seconds: 6), () {
 
       Navigator.pushReplacement(context,
           MaterialPageRoute(builder: (context) => DashboardScreen(title: "Dashboard",), ));
