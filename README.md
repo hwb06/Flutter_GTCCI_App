@@ -24,7 +24,7 @@ The GTCCI mobile app serves as a digital platform for the Gujrat Chamber of Comm
     
 ## *Communication Channels*:
 - Integrated social media connectivity:
-  - WhatsApp (+923208622653)
+  - WhatsApp
   - Facebook
   - LinkedIn
   - Twitter
