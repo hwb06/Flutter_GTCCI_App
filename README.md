@@ -28,7 +28,6 @@ The GTCCI mobile app serves as a digital platform for the Gujrat Chamber of Comm
   - Facebook
   - LinkedIn
   - Twitter
-- Direct contact through landline (+923953300021 / +923953300222)
 - Google Maps integration for location services
 
   ## *Content & Media*:
